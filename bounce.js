@@ -12,8 +12,8 @@ function draw() {
   strokeWeight(4);
   noFill();
   ellipse(x, 200, 100, 100);
-  if (x > width) {
-    speed=-3;
+  if (x > width || x < 0) {
+    speed= speed * -1.1;
   }
 
   x = x+speed;
