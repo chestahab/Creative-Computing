@@ -3,6 +3,7 @@ var ballGen = 0;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  noCursor
 
 }
 
@@ -16,7 +17,7 @@ function draw() {
 }
 
 function mousePressed() {
-  balls[ballGen] = new Ball(mouseX, mouseY, random(25, 100), random(5, 20), color(random(255), random(255), random(255)));
+  balls[ballGen] = new Ball(mouseX+random(-100,100), mouseY+random(-100,100), random(25, 100), random(5, 20), color(random(255), random(255), random(255), random(100, 255)));
   ballGen++;
 }
 
