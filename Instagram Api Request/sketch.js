@@ -20,7 +20,7 @@ function likeAsk() {
 
 }
 function gotData(data) {
-  print(data)
+  print(data.likes.count)
   likes = data;
 }
 
